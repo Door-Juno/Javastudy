@@ -1,6 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "src/3.6",
-        "src/3.7"
+        ""
     ]
 }
