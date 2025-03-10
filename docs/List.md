@@ -10,7 +10,7 @@
 - 데이터의 삽입과 삭제가 자주 일어난다면 -> `LinkedList`를 선택하는 것이 합리적이다.
 
 ### 2. ArrayList 
-- 쇼핑몰 장바구니 기능 
+- ex) 쇼핑몰 장바구니 
 ``` java
 import java.util.ArrayList;
 
@@ -53,22 +53,49 @@ public class ShoppingCart {
 ```
 
 ### 3. LinkedList
-- 최근 본 상품 기능
+- ex ) 최근 본 상품 기능
 ``` java 
 import java.util.LinkedList;
     public class RecentViewedProducts {
         public static void main(String[] args) {
-            LinkedList<String> recentProducts = new LinkedList<>();
+            LinkedList<String> recent = new LinkedList<>();
 
-            // 최근 본 상품 추가 (항상 앞에 추가)
-            recentProducts.addFirst("아이폰 15");
-            recentProducts.addFirst("갤럭시 S24");
-            recentProducts.addFirst("맥북 에어 M2");
+            //리스트 끝에 요소 추가
+            recent.add(item);
 
-            // 전체 리스트 출력
-            System.out.println("최근 본 상품: " + recentProducts);
+            //특정 위치에 요소 추가
+            recent.add(index, item);
+
+            //리스트의 맨 앞에 요소 추가
+            recent.addFirst(item);
+
+            //리스트의 맨 뒤에 요소 추가
+            recent.addLast(item);
+
+            //첫 번째 요소 제거
+            recent.remove();
+
+            //특정 위치 요소 제거
+            recent.remove(index);
+
+            //특정 객체 제거
+            recent.remove(item);
+
+            //첫번째 요소 제거
+            recent.removeFirst();
+
+            //마지막 요소 제거
+            recent.removeLast();
+
+            //특정 인덱스의 요소 반환
+            recent.get(index);
+
+            //첫번째 요소 반환
+            recent.peek();
+
+            //리스트 크기 반환
+            recent.size();
+
     }
 }
 
-
-```
